@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "吃瓜助手 - 全面解密明星代号",
+  "version": "0.0.1",
+  "description": "吃瓜的时候看不懂缩写和表情代表哪个明星？只需要选中对应的代号，吃瓜助手就能告诉你TA是谁！",
+  "icons": {
+    "128": "img/logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/data.js",
+        "scripts/index.js"
+      ],
+      "css": [
+      ],
+      "matches": [
+        "https://*.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "author": "gaogaotiantian@hotmail.com",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "options/options.html",
+    "default_title": "吃瓜助手设置"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  }
+}

@@ -1,0 +1,45 @@
+body {
+    min-width: 250px;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.item {
+    padding: 4px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 0 16px;
+    height: 32px;
+    font-size: 13px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-danger {
+    color: #fff;
+    background: #dc3545;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2196f3;
+    border-color: transparent;
+}
